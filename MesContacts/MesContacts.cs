@@ -16,11 +16,24 @@ namespace MesContacts
         public LB_Group()
         {
             InitializeComponent();
+            LoadGroup();
 
             
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        public void LoadGroup()
+        {
+            this.CB_MyContacts.Items.Clear();
+            this.CB_MyContacts.Items.AddRange(Global.contactsGroup.ToArray());
+
+            if (this.CB_MyContacts.Items.Count > 0)
+            {
+                this.CB_MyContacts.SelectedIndex = 0;
+            }
+
+        }
+
+            private void Form1_Load(object sender, EventArgs e)
         {
 
         }
@@ -46,5 +59,7 @@ namespace MesContacts
             acw.ShowDialog();
 
         }
+
+
     }
 }

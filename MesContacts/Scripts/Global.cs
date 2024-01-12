@@ -9,11 +9,11 @@ namespace MesContacts
         //Variables 
         public static List<Group> contactsGroup = new List<Group>()
         {
-            new Group("Amis")/*,
+            new Group("Amis"),
             new Group("Travail"),
             new Group("Famille")
 
-            */
+            
         };
 
 
