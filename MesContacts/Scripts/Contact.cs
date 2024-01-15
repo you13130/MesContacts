@@ -41,7 +41,7 @@ namespace MesContacts
         }
 
 
-        private Contact(string firstName, string lastName, string email, string phoneNumber, string address, string city, Image photo)
+        public Contact(string firstName, string lastName, string email, string phoneNumber, string address, string city, Image photo)
         {
             this.FirstName = firstName;
             this.LastName = lastName;
